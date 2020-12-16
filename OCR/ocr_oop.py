@@ -60,7 +60,7 @@ def save_file(output, file_type, save_path, save_file_name):
     """
     if not os.path.exists(save_path):
         print("Output path doesn't exist. Output file will be saved in current directory")
-        save_path = "."
+        save_path = ".."
     if file_type == "docx":
         document = Document()
         if isinstance(output, list):

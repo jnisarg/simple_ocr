@@ -58,7 +58,7 @@ def remove_control_characters(s):
 def save_file(output, file_type="txt", save_path=".", save_file_name="output"):
     if not os.path.exists(save_path):
         print("Output path doesn't exist. Output file will be saved in current directory")
-        save_path = "."
+        save_path = ".."
     if file_type == "docx":
         document = Document()
         if isinstance(output, list):
@@ -151,4 +151,4 @@ def pattern_bounding_box(img_file, reg_pat, confidence=60, fig_size=(8, 6), box_
     show_image(image, fig_size, title)
 
 
-print(orientation_script_detection("./images/sample2.png"))
+print(orientation_script_detection("../images/sample2.png"))
